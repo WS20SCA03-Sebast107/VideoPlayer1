@@ -29,15 +29,11 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Bird", ofType: "mp4")!))
-        player.volume = 30;
-        _ = AVPlayerLayer(player: player)
-        
-
-        let vc = AVPlayerViewController();
-        vc.player = player
+        player.volume = 40;
+       let vc = AVPlayerViewController()
+       vc.player = player
         present(vc, animated: true)
     }
 
 
 }
-
